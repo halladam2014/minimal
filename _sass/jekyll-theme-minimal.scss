@@ -2,7 +2,7 @@
 @import "rouge-github";
 
 body {
-  background-color: #fff;
+  background-color: #f7f7f7;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#727272;
@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6 {
 
 p, ul, ol, table, pre, dl {
   margin:0 0 20px;
+  list-style-type: circle; 
+}
+
+ul :last-child, ol :last-child {
+    margin-bottom: 0;
 }
 
 h1, h2, h3 {
@@ -35,13 +40,13 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#267CB9;
+  color:#001273;
   text-decoration:none;
+  font-family: "Noto Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
 
 a:hover, a:focus {
-  color:#069;
-  font-weight: bold;
+  text-shadow: 1px 1px #cccfe3;
 }
 
 a small {
@@ -49,14 +54,16 @@ a small {
   color:#777;
   margin-top:-0.3em;
   display:block;
+  font-family: "Noto Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
 
 a:hover small {
   color:#777;
+  font-family: "Noto Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
 
 .wrapper {
-  width:860px;
+  width:1050px;
   margin:0 auto;
 }
 
@@ -104,22 +111,8 @@ img {
   max-width:100%;
 }
 
-kbd {
-  background-color: #fafbfc;
-  border: 1px solid #c6cbd1;
-  border-bottom-color: #959da5;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #959da5;
-  color: #444d56;
-  display: inline-block;
-  font-size: 11px;
-  line-height: 10px;
-  padding: 3px 5px;
-  vertical-align: middle;
-}
-
 header {
-  width:270px;
+  width:320px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -186,7 +179,7 @@ strong {
 }
 
 section {
-  width:500px;
+  width:700px;
   float:right;
   padding-bottom:50px;
 }
@@ -197,16 +190,16 @@ small {
 
 hr {
   border:0;
-  background:#e5e5e5;
+  background:#001273;
   height:1px;
   margin:0 0 20px;
 }
 
 footer {
-  width:270px;
-  float:left;
-  position:fixed;
-  bottom:50px;
+  width:500px;
+  float:right;
+  text-align:right;
+  bottom:20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -217,7 +210,7 @@ footer {
     margin:0;
   }
 
-  header, section, footer {
+  header, section {
     float:none;
     position:static;
     width:auto;
@@ -283,4 +276,14 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+.fa {
+  padding: 5px;
+  font-size: 12px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-family: "Noto Sans", Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace;
 }
